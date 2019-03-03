@@ -1,0 +1,1 @@
+.progress{width:40rem;padding:2rem 5rem;margin:auto;background:#eee;text-align:center}.progress__bar{margin:auto;width:20rem;height:20rem;-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg);transform:rotate(-90deg);rotation:120deg}.progress__bar--hidden{visibility:hidden}

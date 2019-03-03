@@ -1,0 +1,1 @@
+let form=document.forms["progress-form"],value=form["progress-form__value"];alert(value),value.addEventListener("change",function(){alert(this.value)});

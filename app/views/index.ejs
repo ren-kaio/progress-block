@@ -1,0 +1,23 @@
+<% include partials/header.ejs %>
+<div class="progress">
+    <h1 class="progress__header"> Progress block</h1>
+    <svg class="progress__bar">
+        <!-- длина окружности при радиусе 150px равна: c = 2*P*R = 942px -->
+        <circle id="progress-bar" cx="155" cy="155" r="150" fill="rgb(234,234,234)"
+                stroke-dasharray="471 471" stroke-width="8" stroke="rgb(100,150,255)" />
+    </svg>
+    <form class="progress__form progress-form" name="progress-form">
+        <label for="value"><input id="value" name="progress-form__value" class="form__value" value="50" /> Value</label>
+        <label for="animate">
+            <input id="progress-bar__animate--on" name="progress-form__animate" class="radio" type="radio"/>
+            <input id="progress-bar__animate--off" name="progress-form__animate" class="radio" type="radio"/>
+            Animate</label>
+        <label for="hide">
+            <input id="progress-bar__hide--true" name="progress-form__hide" class="radio" type="radio"/> </label>
+            <input id="progress-bar__hide--false" name="progress-form__hide" class="radio" type="radio"/>
+        Hide</label>
+
+    </form>
+</div>
+
+<% include partials/footer.ejs %>
