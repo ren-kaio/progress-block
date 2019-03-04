@@ -7,15 +7,37 @@
                 stroke-dasharray="471 471" stroke-width="8" stroke="rgb(100,150,255)" />
     </svg>
     <form class="progress__form progress-form" name="progress-form">
-        <label for="value"><input id="value" name="progress-form__value" class="form__value" value="50" /> Value</label>
-        <label for="animate">
-            <input id="progress-bar__animate--on" name="progress-form__animate" class="radio" type="radio"/>
-            <input id="progress-bar__animate--off" name="progress-form__animate" class="radio" type="radio"/>
-            Animate</label>
-        <label for="hide">
-            <input id="progress-bar__hide--true" name="progress-form__hide" class="radio" type="radio"/> </label>
-            <input id="progress-bar__hide--false" name="progress-form__hide" class="radio" type="radio"/>
-        Hide</label>
+
+        <div class="progress-form__item">
+            <div class="progress-form__value-container">
+                <input id="value" name="progress-form__value" class="progress-form__value" value="50" />
+            </div>
+            <label for="value" class="progress-bar__label"> Value</label>
+        </div>
+
+        <div class="progress-form__item">
+            <div class="progress-bar__toggle-bg">
+                <input id="progress-bar__animate--off" name="progress-form__animate" class="progress-bar__animate progress-bar__animate--off" type="radio" checked />
+                <input id="progress-bar__animate--on" name="progress-form__animate" class="progress-bar__animate progress-bar__animate--on" type="radio"/>
+
+                <span class="progress-bar__animate-switch"></span>
+            </div>
+            <label for="progress-form__animate" class="progress-bar__label">Animate</label>
+        </div>
+
+
+
+        <div class="progress-form__item">
+
+            <div class="progress-bar__toggle-bg">
+                <input id="progress-bar__hide--false" name="progress-form__hide" class="progress-bar__hide progress-bar__hide--false" type="radio" checked />
+                <input id="progress-bar__hide--true" name="progress-form__hide" class="progress-bar__hide progress-bar__hide--true" type="radio"/>
+
+                <span class="progress-bar__hide-switch"></span>
+            </div>
+
+                <label for="hide" class="progress-bar__label">Hide</label>
+        </div>
 
     </form>
 </div>

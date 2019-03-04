@@ -2,7 +2,6 @@ let form = document.forms["progress-form"];
 let valueEl=form["progress-form__value"];
 let hideEl = document.getElementById("progress-bar__hide--true");
 let showEl = document.getElementById("progress-bar__hide--false");
-let animateEl =
 
 valueEl.addEventListener("input", function() {
     let value = this.value;
