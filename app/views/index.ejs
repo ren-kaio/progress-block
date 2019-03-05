@@ -3,9 +3,11 @@
     <h1 class="progress__header"> Progress block</h1>
     <svg class="progress__bar">
         <!-- длина окружности при радиусе 150px равна: c = 2*P*R = 942px -->
-        <circle id="progress-bar" cx="155" cy="155" r="150" fill="rgb(234,234,234)"
-                stroke-dasharray="471 471" stroke-width="8" stroke="rgb(100,150,255)" />
-    </svg>
+        <circle id="progress-bar__helper" cx="155" cy="155" r="150" fill="rgb(255,255,255)"
+                 stroke-width="8" stroke="rgb(51,51,51)" />
+        <circle id="progress-bar" cx="155" cy="155" r="150" fill="rgba(255,255,255,0)"
+                stroke-dasharray="471 471" stroke-width="8" stroke="rgb(249,166,2)" />
+            </svg>
     <form class="progress__form progress-form" name="progress-form">
 
         <div class="progress-form__item">

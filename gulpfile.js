@@ -42,12 +42,11 @@ gulp.task('html', html);
 gulp.task('html', html);
 gulp.task('styles', styles);
 
-function js(callback) {
+function js() {
     return gulp.src(paths.scripts.app)
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
         .pipe(browserSync.reload({stream: true}));
-    callback();
 }
 
 
@@ -93,14 +92,14 @@ function cleandist() {
 
 
 
-function watch(callback) {
+function watch() {
 
     gulp.parallel(
         'styles',
         'js',
         'html',
         'browser-sync'
-    )(callback);
+    )();
 
     gulp.watch('app/sass/**/*.scss', gulp.series(styles));
     gulp.watch('app/views/**/*.ejs', gulp.series(html));
