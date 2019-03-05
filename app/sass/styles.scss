@@ -4,6 +4,17 @@
   margin: auto;
   background: #eee; // для самопроверки
   text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+
+  @media(min-width: 860px) {
+    width: 50rem;
+  }
+}
+
+.progress__header {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
 }
 
 .progress__bar {
@@ -12,7 +23,18 @@
   height: 20rem;
   transform: rotate(-90deg);
   rotation: 120deg;
+
 }
+
+.progress__bar--animated {
+
+  @keyframes transform {
+    from { transform: rotate(-90deg); }
+    to { transform: rotate(270deg); }
+  }
+
+  animation: transform 5s infinite linear;
+ }
 
 .progress__bar--hidden {
   visibility: hidden;
@@ -26,6 +48,7 @@
   width:3rem;
   border-radius: 4rem;
 
+
 }
 
 .progress-bar__animate, .progress-bar__hide {
@@ -35,6 +58,9 @@
   padding: 0;
   top:-.4rem;
   opacity: 0; // скрываем радио-инпуты
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .progress-bar__animate--off, .progress-bar__hide--false {
@@ -75,12 +101,21 @@
 
 
 .progress-form {
+  display: block;
   margin: auto;
   margin-top: 5rem;
 
   width: 15rem;
   height: 15rem;
   padding: 2rem;
+
+  @media(min-width: 768px) {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2.5rem;
+    padding-left: 7rem;
+  }
+
 }
 
 .progress-form__value-container {
@@ -97,6 +132,9 @@
   height:3rem;
   vertical-align: top;
   text-align: left;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .progress-form__value {
